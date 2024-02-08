@@ -1,0 +1,7 @@
+ERROR_LOGIN_INVALID_CREDENTIALS = "Invalid adminID or password."
+ERROR_LOGIN_ACCOUNT_LOCKED = "Account is locked. Please contact support."
+ERROR_LOGIN_ACCOUNT_INACTIVE = "Account is inactive. Please contact support."
+ERROR_LOGIN_ACCOUNT_SUSPENDED = "Account is suspended. Please contact support."
+ERROR_PASSWORD_RESET_FAILED = "Password reset failed. Please try again."
+ERROR_PASSWORD_RESET_EXPIRED = "Password reset link has expired. Please request a new link."
+ERROR_PASSWORD_RESET_INVALID_LINK = "Invalid or expired password reset link."

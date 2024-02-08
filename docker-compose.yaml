@@ -1,0 +1,11 @@
+version: '3'
+services: 
+  cse611:
+    build: .
+    image: cse611
+    container_name: cse611-container
+    command: sh -c "python3 main.py"
+    ports:
+      - 8001:8000
+    volumes:
+      - .:/app

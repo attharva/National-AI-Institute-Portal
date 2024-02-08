@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>News | National AI Institute for Exceptional Education</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/static/Style/assets/img/favicon.png" rel="icon" />
+    <link
+      href="/static/Style/assets/img/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="/static/Style/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/Style/assets/vendor/icofont/icofont.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/Style/assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/Style/assets/vendor/venobox/venobox.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/Style/assets/vendor/line-awesome/css/line-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/static/Style/assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="/static/Style/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-eOJMYsd53ii+KxkVF2zF7evFLeD8zXjpfbS98ri+e1pXBy/E9Cv1AyDb2yj6D3xg"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Template Main CSS File -->
+    <link href="/static/Style/assets/css/style.css" rel="stylesheet" />
+
+    <!-- <script src="/static/Style/js/public/publicEvents.js"></script> -->
+    <script src="/static/Style/js/public/publicNews.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="/static/Style/css/publicEventsView.css" /> -->
+    
+    <!-- Sweetalert JS -->
+    <script src="/static/Style/js/sweetalert2.all.min.js"></script>
+    <link href="/static/Style/css/overlay.css" rel="stylesheet">
+    <link href="/static/Style/css/sweetalert2.min.css" rel="stylesheet">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex">
+        <div class="logo mr-auto">
+          <a href="index.html"
+            ><img src="/static/style/assets/img/ub.png" alt="" class="img-fluid"
+          /></a>
+        </div>
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li><a href="/home">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li class="drop-down">
+              <a href="#">Products</a>
+              <ul>
+                <li><a href="#.html"></a></li>
+                <li><a href="/aiscreener">AI Screener</a></li>
+                <li><a href="/aiorchestrator">AI Orchestrator</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/recognition">Recognition</a></li>
+            <li class = 'active'><a href="/news">News</a></li>
+            <li ><a href="/events">Events</a></li>
+            <li><a href="/podcast">Podcast</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/login">Login</a></li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+      <section>
+        <div class="events-title">
+          <span><h2>Latest News</h2></span><br>
+        </div>
+      </section>
+
+
+
+
+      <div class="container-fluid">
+  
+        <div id="largeContainer" class="large-container" style="display:none;">
+          <button id="closeBtn" class="close-button">Close</button>
+          <!-- Dynamic content goes here -->
+        </div>
+  
+        <div id="myCarousel" class="owl-carousel owl-theme my-3">
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+  
+  
+  
+    </main><!-- End #main -->
+  
+    <style>
+  
+    .large-container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%; /* Adjust size as needed */
+      max-width: 800px; /* Maximum size */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      background: gray;
+      color: #fff; /* Set text color to white for visibility */
+      z-index: 1000;
+      padding: 20px;
+      overflow: auto;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /* Styling for the content inside the large container */
+    .large-container .card-img-top {
+      width: 100%; /* Full width */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px;
+    }
+  
+    .large-container .card-body {
+      text-align: center;
+    }
+  
+  
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      background-color: #f44336; /* Red color, you can change it */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .close-button:hover {
+      background-color: #d32f2f; /* Darker shade for hover effect */
+    }
+  
+  
+    .owl-carousel .owl-stage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      min-height: 450px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+      background: linear-gradient(135deg, rgba(0, 91, 187, 1), rgba(0, 91, 187, 1));
+      /* Adjust the gradient as needed */
+  }
+  
+  .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+      background: linear-gradient(135deg, rgba(0, 91, 187, 0.6), rgba(0, 91, 187, 0.8));
+      /* More vibrant gradient on hover */
+  }
+  
+  .card-img-top {
+      height: 300px;
+      object-fit: cover;
+  }
+  
+  .card-title {
+      font-weight: bold;
+      color: #fff; /* White color for better visibility on the gradient */
+  }
+  
+  .card-text {
+      color: #fff; /* White color for better visibility on the gradient */
+  }
+  
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      border: none;
+    }
+  
+    .owl-carousel .owl-nav button.owl-prev {
+      left: -20px;
+    }
+  
+    .owl-carousel .owl-nav button.owl-next {
+      right: -20px;
+    }
+  
+    .owl-carousel .owl-nav button.owl-prev i,
+    .owl-carousel .owl-nav button.owl-next i {
+      font-size: 20px;
+      color: #333;
+    }
+    @media (max-width: 768px) {
+      .owl-carousel .owl-nav button.owl-prev,
+      .owl-carousel .owl-nav button.owl-next {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  
+    </style>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 col-md-8 footer-info">
+              <h3>National AI Institute for Exceptional Education</h3>
+              <img
+                src="/static/Style/assets/img/l2.png"
+                class="img-fluid"
+                alt=""
+              />
+              <hr />
+              <p>
+                An NSF & IES AI Institute for Transforming Education for
+                Children with Speech and Language Processing Challenges.
+              </p>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                <a href="#" class="facebook"
+                  ><i class="icofont-facebook"></i
+                ></a>
+                <a href="#" class="instagram"
+                  ><i class="icofont-instagram"></i
+                ></a>
+                <a href="#" class="linkedin"
+                  ><i class="icofont-linkedin"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <img
+                src="/static/Style/assets/img/l1.png"
+                class="img-fluid"
+                alt=""
+              />
+              <p>
+                <br />The National AI Institute for Exceptional Education is a
+                National Artificial Intelligence (AI) Research Institute led by
+                the University at Buffalo and funded by the National Science
+                Foundation and the Institute of Education Sciences of the US
+                Department of Education.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#.html"> National Science Foundation</a></li>
+                <li><a href="#.html"> National AI Research Institutes</a></li>
+                <li>
+                  <a href="#.html"
+                    >Individuals with Disabilities Education Act</a
+                  >
+                </li>
+                <li><a href="#.html">Institute of Education Services</a></li>
+                <li><a href="#.html">University at Buffalo</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-4 footer-contact">
+              <img
+                src="/static/Style/assets/img/ub.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          &copy; 2023 University at Buffalo. All rights reserved.
+        </div>
+        <div class="credits">
+          <p>Designed by <a href="#">A</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="/static/Style/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/Style/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/Style/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="/static/Style/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="/static/Style/assets/vendor/counterup/counterup.min.js"></script>
+    <script src="/static/Style/assets/vendor/venobox/venobox.min.js"></script>
+    <script src="/static/Style/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="/static/Style/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/static/Style/assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/static/Style/assets/js/main.js"></script>
+
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <script>
+
+$(document).ready(function () {
+  $(document).on('click', '.card', function () {
+
+    var content = $(this).html();
+    var closeButton = '<button id="closeBtn" class="close-button">Close</button>';
+    $('#largeContainer').html(closeButton + content).show();
+
+    // Rebind the click event to the new close button
+    $('#closeBtn').click(function () {
+      $('#largeContainer').hide();
+    });
+  });
+
+  // Close the large container when clicked outside
+  $(document).mouseup(function (e) {
+    var container = $("#largeContainer");
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      container.hide();
+    }
+  });
+});
+
+
+    </script>
+
+  </body>
+</html>
